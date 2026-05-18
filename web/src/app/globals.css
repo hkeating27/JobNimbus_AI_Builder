@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body { min-height: 100%; }
+body {
+  /* JobNimbus-inspired soft gradient. SCROLL-attached (not fixed) and
+     sized to 100% of the body — which means the gradient stretches
+     across the FULL document height, not the viewport. The previous
+     `background-attachment: fixed` version tiled invisibly during
+     normal scroll but banded visibly in full-page screenshots
+     (each viewport-tall slice repainted the gradient, creating
+     horizontal seams). With scroll attachment + size 100%, the
+     radial highlights appear once at the top-right and once at the
+     bottom-left of the entire page — no tiling, no banding. */
+  background:
+    radial-gradient(1400px 900px at 88% 0%, rgba(57, 104, 198, 0.14), transparent 65%),
+    radial-gradient(1300px 900px at 0% 100%, rgba(21, 41, 82, 0.10), transparent 60%),
+    #f7faff;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  color: #0b1220;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl bg-white shadow-soft border border-ink-100/70;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-brand-500 hover:bg-brand-600 active:bg-brand-700 text-white font-medium px-5 py-3 transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-xl bg-white hover:bg-ink-100/40 border border-ink-100 text-ink-700 font-medium px-4 py-2 transition-colors;
+  }
+  .input {
+    @apply w-full rounded-xl bg-white border border-ink-100 px-5 py-4 text-lg placeholder:text-ink-300 focus:outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15 transition;
+  }
+  .label-tiny { @apply text-[11px] uppercase tracking-wider font-semibold text-ink-500; }
+  .stat-num { @apply text-3xl font-display font-semibold text-ink-900 tabular-nums; }
+  .badge { @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium; }
+  .badge-blue { @apply badge bg-brand-50 text-brand-700; }
+  .badge-amber { @apply badge bg-amber-50 text-amber-700; }
+  .badge-green { @apply badge bg-emerald-50 text-emerald-700; }
+  .badge-gray  { @apply badge bg-ink-100/60 text-ink-700; }
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(57,104,198,0.50); }
+  70%  { box-shadow: 0 0 0 14px rgba(57,104,198,0);    }
+  100% { box-shadow: 0 0 0 0 rgba(57,104,198,0);       }
+}
+.pulse-ring { animation: pulse-ring 1.6s infinite; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fade-up 0.4s ease-out both; }
+
+/* Cycling-step text: full fade-in + hold + fade-out lifecycle within
+   one animation, so each remount of a keyed element plays a complete
+   visible cycle. Tied to the CYCLE_MS constant in page.tsx (2.2s). */
+@keyframes fade-step {
+  0%   { opacity: 0; transform: translateY(2px); }
+  18%  { opacity: 1; transform: translateY(0); }
+  82%  { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-2px); }
+}
+.fade-step { animation: fade-step 2.2s ease-in-out forwards; }
+
+/* ===== Print / Save-as-PDF ===== */
+.print-invoice { display: none; }
+
+@media print {
+  @page { size: letter; margin: 0.55in; }
+
+  /* Collapse the entire app shell during print. The PrintableInvoice is
+     portaled to <body> so it survives this rule and renders alone. */
+  body > * { display: none !important; }
+  body > .print-invoice { display: block !important; }
+
+  html, body {
+    background: #fff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .print-invoice {
+    color: #0b1220;
+    font-family: ui-sans-serif, system-ui, "Inter", "Helvetica", "Arial", sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .pi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 8pt;
+    border-bottom: 1.5pt solid #0b1220;
+    margin-bottom: 10pt;
+  }
+  .pi-brand { display: flex; align-items: center; gap: 8pt; }
+  .pi-logo {
+    width: 26pt; height: 26pt; border-radius: 5pt;
+    background: #3968C6; color: #fff;
+    display: grid; place-items: center;
+    font-weight: 700; font-size: 14pt;
+  }
+  .pi-brand-name { font-size: 13pt; font-weight: 700; letter-spacing: -0.01em; }
+  .pi-brand-tag  { font-size: 8pt; color: #5a667c; }
+  .pi-meta { font-size: 8.5pt; text-align: right; color: #283041; }
+  .pi-meta div { margin: 1pt 0; }
+  .pi-meta strong { color: #0b1220; margin-right: 4pt; }
+
+  .pi-title {
+    font-size: 15pt; font-weight: 600; letter-spacing: -0.01em;
+    margin: 0 0 8pt; color: #0b1220;
+  }
+
+  .pi-customer { margin-bottom: 8pt; }
+  .pi-property {
+    font-size: 11pt; font-weight: 600; color: #0b1220;
+    margin-top: 1pt;
+  }
+
+  .pi-property-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5pt 14pt;
+    margin: 0 0 10pt;
+    padding: 7pt 11pt;
+    background: #f4f6fa;
+    border-radius: 6pt;
+    page-break-inside: avoid;
+  }
+  .pi-property-grid > div { display: flex; flex-direction: column; }
+  .pi-property-grid span:last-child { font-weight: 600; font-size: 9.5pt; color: #0b1220; }
+
+  .pi-label {
+    font-size: 7pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #5a667c;
+    font-weight: 600;
+    margin-bottom: 1pt;
+  }
+
+  .pi-section-title {
+    font-size: 10pt; font-weight: 700; letter-spacing: -0.005em;
+    margin: 9pt 0 4pt;
+    color: #0b1220;
+    border-bottom: 0.5pt solid #aab2c0;
+    padding-bottom: 2pt;
+  }
+
+  .pi-scope { font-size: 8pt; line-height: 1.45; }
+  .pi-scope p { margin: 2pt 0 0; text-align: justify; hyphens: auto; }
+  .pi-scope strong { font-weight: 600; }
+
+  .pi-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+  }
+  .pi-table thead th {
+    text-align: left;
+    padding: 2.5pt 5pt;
+    background: #eef0f4;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #5a667c;
+    font-weight: 600;
+  }
+  .pi-table th.ar, .pi-table td.ar { text-align: right; }
+  .pi-table th.al, .pi-table td.al { text-align: left; }
+  .pi-table tbody td { padding: 2.5pt 5pt; border-bottom: 0.4pt solid #e6e9ef; }
+  .pi-table tr.pi-subtotal td { border-top: 0.75pt solid #aab2c0; border-bottom: none; padding-top: 4pt; }
+
+  .pi-totals {
+    margin-top: 10pt;
+    padding-top: 5pt;
+    border-top: 1pt solid #0b1220;
+    page-break-inside: avoid;
+  }
+  .pi-total-row { display: flex; justify-content: space-between; padding: 2pt 0; font-size: 10pt; }
+  .pi-total-row.pi-grand {
+    font-weight: 700; font-size: 13pt; padding-top: 5pt;
+    border-top: 0.5pt solid #0b1220; margin-top: 3pt;
+  }
+
+  .pi-terms { margin-top: 9pt; font-size: 8.5pt; color: #283041; page-break-inside: avoid; }
+  .pi-terms p { margin: 3pt 0; }
+
+  .pi-incentives { margin-top: 9pt; font-size: 8.5pt; color: #283041; page-break-inside: avoid; }
+  .pi-incentive { margin: 3pt 0 6pt; padding: 5pt 7pt; background: #ecfdf5; border-left: 1.5pt solid #10b981; border-radius: 3pt; }
+  .pi-incentive p { margin: 1pt 0; }
+  .pi-incentive-math { color: #065f46; font-weight: 500; }
+  .pi-incentive-action { color: #5a667c; font-style: italic; font-size: 8pt; }
+
+  .pi-sign { margin-top: 14pt; page-break-inside: avoid; }
+  .pi-sign-row { display: flex; gap: 20pt; margin-bottom: 14pt; }
+  .pi-sign-line {
+    flex: 1;
+    border-top: 0.6pt solid #0b1220;
+    padding-top: 3pt;
+    font-size: 8pt;
+    color: #5a667c;
+  }
+
+  .pi-footer {
+    margin-top: 8pt;
+    padding-top: 5pt;
+    border-top: 0.4pt solid #aab2c0;
+    font-size: 7.5pt;
+    color: #5a667c;
+    text-align: center;
+  }
+}
