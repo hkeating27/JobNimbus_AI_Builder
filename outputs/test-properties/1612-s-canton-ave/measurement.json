@@ -1,0 +1,433 @@
+{
+  "address": "1612 S Canton Ave, Springfield, MO 65802",
+  "formatted_address": "1612 S Canton Ave, Springfield, MO 65802, USA",
+  "lat": 37.1860933,
+  "lng": -93.36959139999999,
+  "state_code": "MO",
+  "county": "Greene County",
+  "total_sqft": 2757,
+  "footprint_sqft": 2380,
+  "pitch": {
+    "rise": 7,
+    "run": 12,
+    "multiplier": 1.158,
+    "degrees": 30.3,
+    "label": "7:12"
+  },
+  "segments": 10,
+  "line_items": {
+    "ridge_lf": 51,
+    "hip_lf": 83,
+    "valley_lf": 28,
+    "rake_lf": 11,
+    "eave_lf": 88,
+    "step_flashing_lf": 22,
+    "counter_flashing_lf": 22
+  },
+  "complexity": "hip_or_valleys",
+  "layers": 1,
+  "pipe_boots_count": 2,
+  "penetrations": {
+    "plumbing_vents": 0,
+    "exhaust_vents": 0,
+    "box_vents": 2,
+    "skylights": 0,
+    "chimneys": 0,
+    "satellite_dishes": 0,
+    "solar_panels": 0,
+    "power_attic_vents": 0,
+    "confidence": {
+      "plumbing_vents": "low",
+      "exhaust_vents": "low",
+      "box_vents": "medium",
+      "skylights": "high",
+      "chimneys": "medium",
+      "satellite_dishes": "high",
+      "solar_panels": "high",
+      "power_attic_vents": "medium"
+    },
+    "source": "vision"
+  },
+  "edge_classification": {
+    "source": "vision",
+    "edges": [
+      {
+        "type": "ridge",
+        "length_lf": 17,
+        "pixels": {
+          "from": [
+            380,
+            380
+          ],
+          "to": [
+            424,
+            384
+          ]
+        }
+      },
+      {
+        "type": "ridge",
+        "length_lf": 34,
+        "pixels": {
+          "from": [
+            352,
+            404
+          ],
+          "to": [
+            440,
+            408
+          ]
+        }
+      },
+      {
+        "type": "hip",
+        "length_lf": 17,
+        "pixels": {
+          "from": [
+            424,
+            384
+          ],
+          "to": [
+            464,
+            404
+          ]
+        }
+      },
+      {
+        "type": "hip",
+        "length_lf": 20,
+        "pixels": {
+          "from": [
+            380,
+            380
+          ],
+          "to": [
+            332,
+            360
+          ]
+        }
+      },
+      {
+        "type": "valley",
+        "length_lf": 19,
+        "pixels": {
+          "from": [
+            352,
+            404
+          ],
+          "to": [
+            332,
+            360
+          ]
+        }
+      },
+      {
+        "type": "valley",
+        "length_lf": 9,
+        "pixels": {
+          "from": [
+            440,
+            408
+          ],
+          "to": [
+            464,
+            404
+          ]
+        }
+      },
+      {
+        "type": "hip",
+        "length_lf": 25,
+        "pixels": {
+          "from": [
+            352,
+            404
+          ],
+          "to": [
+            296,
+            436
+          ]
+        }
+      },
+      {
+        "type": "hip",
+        "length_lf": 21,
+        "pixels": {
+          "from": [
+            440,
+            408
+          ],
+          "to": [
+            484,
+            440
+          ]
+        }
+      },
+      {
+        "type": "eave",
+        "length_lf": 22,
+        "pixels": {
+          "from": [
+            296,
+            324
+          ],
+          "to": [
+            352,
+            328
+          ]
+        }
+      },
+      {
+        "type": "eave",
+        "length_lf": 66,
+        "pixels": {
+          "from": [
+            296,
+            476
+          ],
+          "to": [
+            464,
+            484
+          ]
+        }
+      },
+      {
+        "type": "rake",
+        "length_lf": 11,
+        "pixels": {
+          "from": [
+            484,
+            456
+          ],
+          "to": [
+            512,
+            460
+          ]
+        }
+      }
+    ],
+    "totals_lf": {
+      "ridge": 51,
+      "hip": 83,
+      "valley": 28,
+      "rake": 11,
+      "eave": 88
+    }
+  },
+  "ensemble": {
+    "sources": [
+      {
+        "source": "google_solar",
+        "total_sqft": 2757,
+        "footprint_sqft": 2380,
+        "pitch_degrees": 30.3,
+        "weight": 1,
+        "ok": true
+      },
+      {
+        "source": "claude_vision",
+        "total_sqft": 2779,
+        "footprint_sqft": 2400,
+        "pitch_degrees": 30.3,
+        "weight": 0,
+        "ok": true
+      },
+      {
+        "source": "osm_footprints",
+        "total_sqft": null,
+        "footprint_sqft": null,
+        "pitch_degrees": null,
+        "weight": 0,
+        "ok": false
+      }
+    ],
+    "consensus_total_sqft": 2757,
+    "consensus_footprint_sqft": 2380,
+    "consensus_pitch_degrees": 30.3,
+    "agreement_pct": 99,
+    "flag": "high_agreement"
+  },
+  "satellite_image_url": "/api/satellite?lat=37.186093&lng=-93.36959159999999&zoom=20&size=800x800",
+  "precise_polygon": [
+    [
+      0.4362244356257802,
+      0.4140874628677866
+    ],
+    [
+      0.5036894954596656,
+      0.4161957459875955
+    ],
+    [
+      0.5047436370195701,
+      0.4193581706673089
+    ],
+    [
+      0.5405844500563216,
+      0.4193581706673089
+    ],
+    [
+      0.5416385916162261,
+      0.42146645378711783
+    ],
+    [
+      0.5743169799732644,
+      0.42146645378711783
+    ],
+    [
+      0.5753711215331688,
+      0.42462887846683117
+    ],
+    [
+      0.5901291033718313,
+      0.42462887846683117
+    ],
+    [
+      0.5880208202520224,
+      0.4889315136210032
+    ],
+    [
+      0.584858395572309,
+      0.48998565518090764
+    ],
+    [
+      0.584858395572309,
+      0.49420222142052544
+    ],
+    [
+      0.5648297059341243,
+      0.49420222142052544
+    ],
+    [
+      0.5637755643742198,
+      0.4973646461002389
+    ],
+    [
+      0.5585048565746975,
+      0.4984187876601433
+    ],
+    [
+      0.5585048565746975,
+      0.5100143448190924
+    ],
+    [
+      0.5616672812544109,
+      0.5110684863789968
+    ],
+    [
+      0.5637755643742198,
+      0.5163391941785191
+    ],
+    [
+      0.5637755643742198,
+      0.5448010162959396
+    ],
+    [
+      0.5616672812544109,
+      0.5458551578558439
+    ],
+    [
+      0.5616672812544109,
+      0.5521800072152707
+    ],
+    [
+      0.5532341487751752,
+      0.5585048565746975
+    ],
+    [
+      0.5511258656553664,
+      0.5869666786921179
+    ],
+    [
+      0.506851920139379,
+      0.5869666786921179
+    ],
+    [
+      0.5057977785794745,
+      0.5838042540124045
+    ],
+    [
+      0.4752276733422452,
+      0.5838042540124045
+    ],
+    [
+      0.47417353178234073,
+      0.5816959708925956
+    ],
+    [
+      0.44149514342530255,
+      0.5816959708925956
+    ],
+    [
+      0.4404410018653981,
+      0.5785335462128822
+    ],
+    [
+      0.41514160442769105,
+      0.5785335462128822
+    ],
+    [
+      0.4098708966281687,
+      0.5732628384133599
+    ],
+    [
+      0.4119791797479776,
+      0.5479634409756529
+    ],
+    [
+      0.41514160442769105,
+      0.5469092994157484
+    ],
+    [
+      0.41514160442769105,
+      0.5036894954596656
+    ],
+    [
+      0.4172498875474999,
+      0.5005270707799522
+    ],
+    [
+      0.43517029406587576,
+      0.4984187876601433
+    ],
+    [
+      0.4383327187455891,
+      0.49209393830071657
+    ],
+    [
+      0.4383327187455891,
+      0.46152383306348727
+    ],
+    [
+      0.4362244356257802,
+      0.4604696915035828
+    ],
+    [
+      0.4362244356257802,
+      0.44571170966492035
+    ],
+    [
+      0.43306201094606683,
+      0.4446575681050159
+    ],
+    [
+      0.43306201094606683,
+      0.4161957459875955
+    ],
+    [
+      0.4362244356257802,
+      0.41514160442769105
+    ]
+  ],
+  "data_sources": [
+    "google_geocoding",
+    "google_solar_api",
+    "solar_data_layers",
+    "claude_vision"
+  ],
+  "confidence": "high",
+  "notes": [
+    "Precise outline extracted from Solar mask (42 corners after simplification, raw boundary 661 px).",
+    "Vision polygon implausible (4208 sqft); using gut estimate 2400 sqft instead.",
+    "Penetrations dropped to 0 due to low confidence: plumbing_vents, exhaust_vents."
+  ]
+}

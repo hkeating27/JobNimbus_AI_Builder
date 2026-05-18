@@ -1,0 +1,343 @@
+{
+  "address": "3561 E 102nd Ct, Thornton, CO 80229",
+  "formatted_address": "3561 E 102nd Ct, Thornton, CO 80229, USA",
+  "lat": 39.8811632,
+  "lng": -104.9453839,
+  "state_code": "CO",
+  "county": "Adams County",
+  "total_sqft": 2081,
+  "footprint_sqft": 1664,
+  "pitch": {
+    "rise": 9,
+    "run": 12,
+    "multiplier": 1.25,
+    "degrees": 36.9,
+    "label": "9:12"
+  },
+  "segments": 9,
+  "line_items": {
+    "ridge_lf": 50,
+    "hip_lf": 67,
+    "valley_lf": 45,
+    "rake_lf": 0,
+    "eave_lf": 132,
+    "step_flashing_lf": 22,
+    "counter_flashing_lf": 22
+  },
+  "complexity": "hip_or_valleys",
+  "layers": 1,
+  "pipe_boots_count": 2,
+  "penetrations": {
+    "plumbing_vents": 2,
+    "exhaust_vents": 0,
+    "box_vents": 2,
+    "skylights": 0,
+    "chimneys": 0,
+    "satellite_dishes": 0,
+    "solar_panels": 0,
+    "power_attic_vents": 0,
+    "confidence": {
+      "plumbing_vents": "medium",
+      "exhaust_vents": "low",
+      "box_vents": "medium",
+      "skylights": "high",
+      "chimneys": "medium",
+      "satellite_dishes": "high",
+      "solar_panels": "high",
+      "power_attic_vents": "high"
+    },
+    "source": "vision"
+  },
+  "edge_classification": {
+    "source": "vision",
+    "edges": [
+      {
+        "type": "ridge",
+        "length_lf": 30,
+        "pixels": {
+          "from": [
+            352,
+            392
+          ],
+          "to": [
+            432,
+            392
+          ]
+        }
+      },
+      {
+        "type": "hip",
+        "length_lf": 23,
+        "pixels": {
+          "from": [
+            352,
+            392
+          ],
+          "to": [
+            308,
+            348
+          ]
+        }
+      },
+      {
+        "type": "hip",
+        "length_lf": 24,
+        "pixels": {
+          "from": [
+            352,
+            392
+          ],
+          "to": [
+            308,
+            440
+          ]
+        }
+      },
+      {
+        "type": "hip",
+        "length_lf": 20,
+        "pixels": {
+          "from": [
+            432,
+            392
+          ],
+          "to": [
+            452,
+            440
+          ]
+        }
+      },
+      {
+        "type": "ridge",
+        "length_lf": 20,
+        "pixels": {
+          "from": [
+            400,
+            340
+          ],
+          "to": [
+            400,
+            392
+          ]
+        }
+      },
+      {
+        "type": "valley",
+        "length_lf": 23,
+        "pixels": {
+          "from": [
+            400,
+            340
+          ],
+          "to": [
+            432,
+            392
+          ]
+        }
+      },
+      {
+        "type": "valley",
+        "length_lf": 22,
+        "pixels": {
+          "from": [
+            400,
+            340
+          ],
+          "to": [
+            376,
+            392
+          ]
+        }
+      },
+      {
+        "type": "eave",
+        "length_lf": 15,
+        "pixels": {
+          "from": [
+            292,
+            328
+          ],
+          "to": [
+            332,
+            328
+          ]
+        }
+      },
+      {
+        "type": "eave",
+        "length_lf": 54,
+        "pixels": {
+          "from": [
+            332,
+            316
+          ],
+          "to": [
+            476,
+            316
+          ]
+        }
+      },
+      {
+        "type": "eave",
+        "length_lf": 63,
+        "pixels": {
+          "from": [
+            292,
+            460
+          ],
+          "to": [
+            460,
+            460
+          ]
+        }
+      }
+    ],
+    "totals_lf": {
+      "ridge": 50,
+      "hip": 67,
+      "valley": 45,
+      "rake": 0,
+      "eave": 132
+    }
+  },
+  "ensemble": {
+    "sources": [
+      {
+        "source": "google_solar",
+        "total_sqft": 2081,
+        "footprint_sqft": 1664,
+        "pitch_degrees": 36.9,
+        "weight": 1,
+        "ok": true
+      },
+      {
+        "source": "claude_vision",
+        "total_sqft": 2069,
+        "footprint_sqft": 1655,
+        "pitch_degrees": 36.9,
+        "weight": 0,
+        "ok": true
+      },
+      {
+        "source": "osm_footprints",
+        "total_sqft": null,
+        "footprint_sqft": null,
+        "pitch_degrees": null,
+        "weight": 0,
+        "ok": false
+      }
+    ],
+    "consensus_total_sqft": 2081,
+    "consensus_footprint_sqft": 1664,
+    "consensus_pitch_degrees": 36.9,
+    "agreement_pct": 99,
+    "flag": "high_agreement"
+  },
+  "satellite_image_url": "/api/satellite?lat=39.8811532&lng=-104.94537849999999&zoom=20&size=800x800",
+  "precise_polygon": [
+    [
+      0.4403556582005364,
+      0.42612856749607725
+    ],
+    [
+      0.5738714325039228,
+      0.42612856749607725
+    ],
+    [
+      0.5738714325039228,
+      0.5257182024272917
+    ],
+    [
+      0.5629275165774158,
+      0.5311901603905452
+    ],
+    [
+      0.5366621183537987,
+      0.5311901603905452
+    ],
+    [
+      0.535567726761148,
+      0.5366621183537987
+    ],
+    [
+      0.5322845519831959,
+      0.5377565099464494
+    ],
+    [
+      0.5322845519831959,
+      0.5454172510950044
+    ],
+    [
+      0.5268125940199423,
+      0.550889209058258
+    ],
+    [
+      0.5202462444640381,
+      0.550889209058258
+    ],
+    [
+      0.5158686780934353,
+      0.55417238383621
+    ],
+    [
+      0.5158686780934353,
+      0.56949386613332
+    ],
+    [
+      0.5136798949081338,
+      0.5705882577259707
+    ],
+    [
+      0.5136798949081338,
+      0.5782489988745256
+    ],
+    [
+      0.5103967201301818,
+      0.5793433904671763
+    ],
+    [
+      0.5103967201301818,
+      0.5891929148010326
+    ],
+    [
+      0.4436388329784885,
+      0.5891929148010326
+    ],
+    [
+      0.44254444138583776,
+      0.5859097400230806
+    ],
+    [
+      0.43488370023728284,
+      0.5837209568377791
+    ],
+    [
+      0.43488370023728284,
+      0.5191518528713874
+    ],
+    [
+      0.438166875015235,
+      0.5180574612787366
+    ],
+    [
+      0.438166875015235,
+      0.4283173506813786
+    ],
+    [
+      0.4403556582005364,
+      0.42722295908872787
+    ]
+  ],
+  "data_sources": [
+    "google_geocoding",
+    "google_solar_api",
+    "solar_data_layers",
+    "claude_vision"
+  ],
+  "confidence": "high",
+  "notes": [
+    "Precise outline extracted from Solar mask (23 corners after simplification, raw boundary 538 px).",
+    "Vision polygon implausible (3404 sqft); using gut estimate 1655 sqft instead.",
+    "Penetrations dropped to 0 due to low confidence: exhaust_vents."
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "address": "21106 Kenswick Meadows Ct, Humble, TX 77338",
+    "predicted_sqft": 2389,
+    "predicted_pitch": "7:12",
+    "ref_a_sqft": 2443,
+    "ref_b_sqft": 2343,
+    "err_pct_vs_a": -2.2103970528039296,
+    "err_pct_vs_b": 1.9632949210414,
+    "err_pct_vs_avg": -0.1671541997492687,
+    "data_sources": "google_geocoding, google_solar_api, claude_vision",
+    "confidence": "low",
+    "notes": "Vision polygon implausible (6557 sqft); using gut estimate 2750 sqft instead. | Source disagreement (67% agreement). Sources: google_solar=2389, claude_vision=3185. | Penetrations dropped to 0 due to low confidence: plumbing_vents, exhaust_vents, box_vents.",
+    "predicted_quote_better": 20197
+  },
+  {
+    "address": "5914 Copper Lilly Lane, Spring, TX 77389",
+    "predicted_sqft": 4369,
+    "predicted_pitch": "10:12",
+    "ref_a_sqft": 4391,
+    "ref_b_sqft": 4296,
+    "err_pct_vs_a": -0.501024823502619,
+    "err_pct_vs_b": 1.6992551210428304,
+    "err_pct_vs_avg": 0.5870841487279843,
+    "data_sources": "google_geocoding, google_solar_api, claude_vision",
+    "confidence": "medium",
+    "notes": "Penetrations dropped to 0 due to low confidence: exhaust_vents, box_vents.",
+    "predicted_quote_better": 35012
+  },
+  {
+    "address": "122 NW 13th Ave, Cape Coral, FL 33993",
+    "predicted_sqft": 2924,
+    "predicted_pitch": "6:12",
+    "ref_a_sqft": 2917,
+    "ref_b_sqft": 2851,
+    "err_pct_vs_a": 0.23997257456290708,
+    "err_pct_vs_b": 2.56050508593476,
+    "err_pct_vs_avg": 1.3869625520110958,
+    "data_sources": "google_geocoding, google_solar_api, claude_vision",
+    "confidence": "low",
+    "notes": "Vision polygon implausible (4778 sqft); using gut estimate 1975 sqft instead. | Source disagreement (68% agreement). Sources: google_solar=2924, claude_vision=2208. | Penetrations dropped to 0 due to low confidence: plumbing_vents, exhaust_vents, box_vents.",
+    "predicted_quote_better": 25836
+  },
+  {
+    "address": "14132 Trenton Ave, Orland Park, IL 60462",
+    "predicted_sqft": 3170,
+    "predicted_pitch": "4:12",
+    "ref_a_sqft": 2990,
+    "ref_b_sqft": 2935,
+    "err_pct_vs_a": 6.0200668896321075,
+    "err_pct_vs_b": 8.006814310051109,
+    "err_pct_vs_avg": 7.0042194092827,
+    "data_sources": "google_geocoding, google_solar_api, claude_vision",
+    "confidence": "medium",
+    "notes": "Vision polygon implausible (6346 sqft); using gut estimate 2400 sqft instead. | Penetrations dropped to 0 due to low confidence: plumbing_vents, exhaust_vents.",
+    "predicted_quote_better": 32763
+  },
+  {
+    "address": "835 S Cobble Creek, Nixa, MO 65714",
+    "predicted_sqft": 3070,
+    "predicted_pitch": "8:12",
+    "ref_a_sqft": 3070,
+    "ref_b_sqft": 3017,
+    "err_pct_vs_a": 0,
+    "err_pct_vs_b": 1.756711965528671,
+    "err_pct_vs_avg": 0.8707080663709544,
+    "data_sources": "google_geocoding, google_solar_api, claude_vision",
+    "confidence": "high",
+    "notes": "Vision polygon implausible (6775 sqft); using gut estimate 2550 sqft instead. | Penetrations dropped to 0 due to low confidence: plumbing_vents, exhaust_vents, box_vents.",
+    "predicted_quote_better": 21846
+  }
+]

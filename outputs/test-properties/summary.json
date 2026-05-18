@@ -1,0 +1,52 @@
+[
+  {
+    "address": "3561 E 102nd Ct, Thornton, CO 80229",
+    "total_sqft": 2081,
+    "pitch": "9:12",
+    "quote_better": 25785,
+    "quote_good": 24305,
+    "quote_best": 28533,
+    "confidence": "high",
+    "sources": "google_geocoding, google_solar_api, solar_data_layers, claude_vision"
+  },
+  {
+    "address": "1612 S Canton Ave, Springfield, MO 65802",
+    "total_sqft": 2757,
+    "pitch": "7:12",
+    "quote_better": 18731,
+    "quote_good": 17173,
+    "quote_best": 21624,
+    "confidence": "high",
+    "sources": "google_geocoding, google_solar_api, solar_data_layers, claude_vision"
+  },
+  {
+    "address": "6310 Laguna Bay Court, Houston, TX 77041",
+    "total_sqft": 4186,
+    "pitch": "8:12",
+    "quote_better": 31500,
+    "quote_good": 28988,
+    "quote_best": 36166,
+    "confidence": "low",
+    "sources": "google_geocoding, google_solar_api, solar_data_layers, claude_vision"
+  },
+  {
+    "address": "3820 E Rosebrier St, Springfield, MO 65809",
+    "total_sqft": 5566,
+    "pitch": "6:12",
+    "quote_better": 35615,
+    "quote_good": 32333,
+    "quote_best": 41711,
+    "confidence": "low",
+    "sources": "google_geocoding, google_solar_api, solar_data_layers, claude_vision"
+  },
+  {
+    "address": "1261 20th Street, Newport News, VA 23607",
+    "total_sqft": 2530,
+    "pitch": "4:12",
+    "quote_better": 25782,
+    "quote_good": 24216,
+    "quote_best": 28692,
+    "confidence": "low",
+    "sources": "google_geocoding, google_solar_api, solar_data_layers, claude_vision"
+  }
+]

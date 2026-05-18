@@ -1,0 +1,1279 @@
+{
+  "measurement": {
+    "address": "6310 Laguna Bay Court, Houston, TX 77041",
+    "formatted_address": "6310 Laguna Bay Ct, Houston, TX 77041, USA",
+    "lat": 29.8603157,
+    "lng": -95.59039589999999,
+    "state_code": "TX",
+    "county": "Harris County",
+    "total_sqft": 4186,
+    "footprint_sqft": 3483,
+    "pitch": {
+      "rise": 8,
+      "run": 12,
+      "multiplier": 1.202,
+      "degrees": 33.7,
+      "label": "8:12"
+    },
+    "segments": 20,
+    "line_items": {
+      "ridge_lf": 66,
+      "hip_lf": 134,
+      "valley_lf": 27,
+      "rake_lf": 0,
+      "eave_lf": 148,
+      "step_flashing_lf": 22,
+      "counter_flashing_lf": 22
+    },
+    "complexity": "hip_or_valleys",
+    "layers": 1,
+    "pipe_boots_count": 3,
+    "penetrations": {
+      "plumbing_vents": 3,
+      "exhaust_vents": 0,
+      "box_vents": 0,
+      "skylights": 0,
+      "chimneys": 0,
+      "satellite_dishes": 0,
+      "solar_panels": 0,
+      "power_attic_vents": 0,
+      "confidence": {
+        "plumbing_vents": "medium",
+        "exhaust_vents": "low",
+        "box_vents": "low",
+        "skylights": "high",
+        "chimneys": "medium",
+        "satellite_dishes": "medium",
+        "solar_panels": "high",
+        "power_attic_vents": "medium"
+      },
+      "source": "vision"
+    },
+    "edge_classification": {
+      "source": "vision",
+      "edges": [
+        {
+          "type": "ridge",
+          "length_lf": 34,
+          "pixels": {
+            "from": [
+              328,
+              232
+            ],
+            "to": [
+              408,
+              232
+            ]
+          }
+        },
+        {
+          "type": "hip",
+          "length_lf": 24,
+          "pixels": {
+            "from": [
+              328,
+              232
+            ],
+            "to": [
+              280,
+              204
+            ]
+          }
+        },
+        {
+          "type": "hip",
+          "length_lf": 16,
+          "pixels": {
+            "from": [
+              408,
+              232
+            ],
+            "to": [
+              432,
+              204
+            ]
+          }
+        },
+        {
+          "type": "hip",
+          "length_lf": 29,
+          "pixels": {
+            "from": [
+              328,
+              232
+            ],
+            "to": [
+              280,
+              280
+            ]
+          }
+        },
+        {
+          "type": "hip",
+          "length_lf": 19,
+          "pixels": {
+            "from": [
+              408,
+              232
+            ],
+            "to": [
+              440,
+              264
+            ]
+          }
+        },
+        {
+          "type": "ridge",
+          "length_lf": 32,
+          "pixels": {
+            "from": [
+              352,
+              284
+            ],
+            "to": [
+              428,
+              292
+            ]
+          }
+        },
+        {
+          "type": "valley",
+          "length_lf": 27,
+          "pixels": {
+            "from": [
+              408,
+              232
+            ],
+            "to": [
+              428,
+              292
+            ]
+          }
+        },
+        {
+          "type": "hip",
+          "length_lf": 19,
+          "pixels": {
+            "from": [
+              428,
+              292
+            ],
+            "to": [
+              460,
+              324
+            ]
+          }
+        },
+        {
+          "type": "hip",
+          "length_lf": 27,
+          "pixels": {
+            "from": [
+              352,
+              284
+            ],
+            "to": [
+              320,
+              340
+            ]
+          }
+        },
+        {
+          "type": "eave",
+          "length_lf": 15,
+          "pixels": {
+            "from": [
+              264,
+              288
+            ],
+            "to": [
+              300,
+              292
+            ]
+          }
+        },
+        {
+          "type": "eave",
+          "length_lf": 58,
+          "pixels": {
+            "from": [
+              308,
+              348
+            ],
+            "to": [
+              444,
+              352
+            ]
+          }
+        },
+        {
+          "type": "eave",
+          "length_lf": 75,
+          "pixels": {
+            "from": [
+              260,
+              196
+            ],
+            "to": [
+              436,
+              192
+            ]
+          }
+        }
+      ],
+      "totals_lf": {
+        "ridge": 66,
+        "hip": 134,
+        "valley": 27,
+        "rake": 0,
+        "eave": 148
+      }
+    },
+    "ensemble": {
+      "sources": [
+        {
+          "source": "google_solar",
+          "total_sqft": 4186,
+          "footprint_sqft": 3483,
+          "pitch_degrees": 33.7,
+          "weight": 0.15,
+          "ok": true
+        },
+        {
+          "source": "claude_vision",
+          "total_sqft": 6112,
+          "footprint_sqft": 5085,
+          "pitch_degrees": 33.7,
+          "weight": 0.6,
+          "ok": true
+        },
+        {
+          "source": "osm_footprints",
+          "total_sqft": null,
+          "footprint_sqft": null,
+          "pitch_degrees": null,
+          "weight": 0,
+          "ok": false
+        }
+      ],
+      "consensus_total_sqft": 4186,
+      "consensus_footprint_sqft": 3483,
+      "consensus_pitch_degrees": 33.7,
+      "agreement_pct": 54,
+      "flag": "high_disagreement"
+    },
+    "satellite_image_url": "/api/satellite?lat=29.8603084&lng=-95.5903731&zoom=20&size=800x800",
+    "precise_polygon": [
+      [
+        0.40712974556200376,
+        0.3974557607247125
+      ],
+      [
+        0.4351843015901485,
+        0.3993905576921708
+      ],
+      [
+        0.4361517000738776,
+        0.40229275314335816
+      ],
+      [
+        0.45163007581354364,
+        0.40229275314335816
+      ],
+      [
+        0.45259747429727276,
+        0.40422755011081635
+      ],
+      [
+        0.4613040606508349,
+        0.40422755011081635
+      ],
+      [
+        0.462271459134564,
+        0.40712974556200376
+      ],
+      [
+        0.48355422577660484,
+        0.40906454252946206
+      ],
+      [
+        0.48452162426033396,
+        0.4119667379806494
+      ],
+      [
+        0.5029021954511874,
+        0.4139015349481076
+      ],
+      [
+        0.5038695939349165,
+        0.4168037303992951
+      ],
+      [
+        0.5338589469305195,
+        0.4187385273667533
+      ],
+      [
+        0.5348263454142486,
+        0.4216407228179407
+      ],
+      [
+        0.5580439090237477,
+        0.423575519785399
+      ],
+      [
+        0.5590113075074767,
+        0.42647771523658634
+      ],
+      [
+        0.5773918786983302,
+        0.4284125122040446
+      ],
+      [
+        0.5802940741495176,
+        0.43131470765523194
+      ],
+      [
+        0.5802940741495176,
+        0.446793083394898
+      ],
+      [
+        0.5773918786983302,
+        0.44776048187862716
+      ],
+      [
+        0.5773918786983302,
+        0.45936926368337666
+      ],
+      [
+        0.575457081730872,
+        0.4603366621671058
+      ],
+      [
+        0.575457081730872,
+        0.46614105306948056
+      ],
+      [
+        0.5725548862796845,
+        0.4671084515532097
+      ],
+      [
+        0.5725548862796845,
+        0.4738802409393136
+      ],
+      [
+        0.5706200893122263,
+        0.4758150379067718
+      ],
+      [
+        0.5445003302515399,
+        0.4738802409393136
+      ],
+      [
+        0.5415981348003525,
+        0.48355422577660484
+      ],
+      [
+        0.5367611423817068,
+        0.4864564212277922
+      ],
+      [
+        0.5367611423817068,
+        0.49032601516270874
+      ],
+      [
+        0.5319241499630611,
+        0.49516300758135434
+      ],
+      [
+        0.5280545560281447,
+        0.49516300758135434
+      ],
+      [
+        0.5270871575444156,
+        0.49806520303254176
+      ],
+      [
+        0.523217563609499,
+        0.49806520303254176
+      ],
+      [
+        0.5222501651257699,
+        0.5029021954511874
+      ],
+      [
+        0.5193479696745825,
+        0.5038695939349165
+      ],
+      [
+        0.5193479696745825,
+        0.5174131727071243
+      ],
+      [
+        0.5319241499630611,
+        0.5183805711908535
+      ],
+      [
+        0.5328915484467903,
+        0.5203153681583117
+      ],
+      [
+        0.5483699241864564,
+        0.5203153681583117
+      ],
+      [
+        0.5493373226701855,
+        0.523217563609499
+      ],
+      [
+        0.5725548862796845,
+        0.523217563609499
+      ],
+      [
+        0.5812614726332467,
+        0.5299893529956029
+      ],
+      [
+        0.614153021080037,
+        0.5280545560281447
+      ],
+      [
+        0.6151204195637662,
+        0.5299893529956029
+      ],
+      [
+        0.6305987953034322,
+        0.5299893529956029
+      ],
+      [
+        0.6315661937871613,
+        0.5328915484467903
+      ],
+      [
+        0.6383379831732653,
+        0.5328915484467903
+      ],
+      [
+        0.6402727801407235,
+        0.5348263454142486
+      ],
+      [
+        0.6383379831732653,
+        0.575457081730872
+      ],
+      [
+        0.6354357877220778,
+        0.576424480214601
+      ],
+      [
+        0.6354357877220778,
+        0.5899680589868088
+      ],
+      [
+        0.6335009907546195,
+        0.590935457470538
+      ],
+      [
+        0.6335009907546195,
+        0.5967398483729127
+      ],
+      [
+        0.6305987953034322,
+        0.5977072468566419
+      ],
+      [
+        0.6305987953034322,
+        0.620924810466141
+      ],
+      [
+        0.6257618028847866,
+        0.628663998335974
+      ],
+      [
+        0.6122182241125788,
+        0.628663998335974
+      ],
+      [
+        0.6112508256288497,
+        0.6257618028847866
+      ],
+      [
+        0.5957724498891837,
+        0.6257618028847866
+      ],
+      [
+        0.5948050514054545,
+        0.6238270059173283
+      ],
+      [
+        0.576424480214601,
+        0.6238270059173283
+      ],
+      [
+        0.575457081730872,
+        0.620924810466141
+      ],
+      [
+        0.5619135029586642,
+        0.620924810466141
+      ],
+      [
+        0.5619135029586642,
+        0.5880332620193506
+      ],
+      [
+        0.5638482999261224,
+        0.5870658635356214
+      ],
+      [
+        0.5638482999261224,
+        0.5812614726332467
+      ],
+      [
+        0.5667504953773098,
+        0.5802940741495176
+      ],
+      [
+        0.5667504953773098,
+        0.5570765105400185
+      ],
+      [
+        0.560946104474935,
+        0.5512721196376438
+      ],
+      [
+        0.5570765105400185,
+        0.5512721196376438
+      ],
+      [
+        0.5512721196376438,
+        0.5435329317678107
+      ],
+      [
+        0.537728540865436,
+        0.5435329317678107
+      ],
+      [
+        0.5367611423817068,
+        0.5415981348003525
+      ],
+      [
+        0.4864564212277922,
+        0.5415981348003525
+      ],
+      [
+        0.48355422577660484,
+        0.553206916605102
+      ],
+      [
+        0.46517365458575144,
+        0.553206916605102
+      ],
+      [
+        0.4642062561020223,
+        0.5512721196376438
+      ],
+      [
+        0.4554996697484601,
+        0.5512721196376438
+      ],
+      [
+        0.454532271264731,
+        0.5483699241864564
+      ],
+      [
+        0.4361517000738776,
+        0.5483699241864564
+      ],
+      [
+        0.42067332433421156,
+        0.5415981348003525
+      ],
+      [
+        0.40906454252946206,
+        0.5415981348003525
+      ],
+      [
+        0.40809714404573294,
+        0.538695939349165
+      ],
+      [
+        0.3926187683060668,
+        0.538695939349165
+      ],
+      [
+        0.38197738498504646,
+        0.5270871575444156
+      ],
+      [
+        0.37810779105013,
+        0.5270871575444156
+      ],
+      [
+        0.3752055955989426,
+        0.5241849620932282
+      ],
+      [
+        0.3752055955989426,
+        0.4941956090976252
+      ],
+      [
+        0.37810779105013,
+        0.4932282106138961
+      ],
+      [
+        0.3800425880175882,
+        0.4671084515532097
+      ],
+      [
+        0.38294478346877553,
+        0.46614105306948056
+      ],
+      [
+        0.38487958043623377,
+        0.4613040606508349
+      ],
+      [
+        0.38487958043623377,
+        0.4506626773298145
+      ],
+      [
+        0.38778177588742124,
+        0.4496952788460854
+      ],
+      [
+        0.38778177588742124,
+        0.4429234894599815
+      ],
+      [
+        0.3897165728548795,
+        0.43808649704133584
+      ],
+      [
+        0.3926187683060668,
+        0.4371190985576067
+      ],
+      [
+        0.3945535652735251,
+        0.4119667379806494
+      ],
+      [
+        0.40229275314335816,
+        0.40809714404573294
+      ],
+      [
+        0.40422755011081635,
+        0.3993905576921708
+      ],
+      [
+        0.40712974556200376,
+        0.39842315920844157
+      ]
+    ],
+    "data_sources": [
+      "google_geocoding",
+      "google_solar_api",
+      "solar_data_layers",
+      "claude_vision"
+    ],
+    "confidence": "low",
+    "notes": [
+      "Precise outline extracted from Solar mask (101 corners after simplification, raw boundary 1112 px).",
+      "Source disagreement (54% agreement). Sources: google_solar=4186, claude_vision=6112.",
+      "Penetrations dropped to 0 due to low confidence: exhaust_vents, box_vents."
+    ]
+  },
+  "zone_key": "low_cost_competitive",
+  "zone_label": "Houston metro",
+  "labor_multiplier": 0.988,
+  "material_multiplier": 1.014,
+  "target_gross_margin": 0.32,
+  "tiers": [
+    {
+      "key": "good",
+      "name": "Good — 3-tab",
+      "shingle_product": "GAF Royal Sovereign",
+      "badge": "Budget",
+      "warranty": "25 yr ltd",
+      "wind_rating_mph": 60,
+      "materials": [
+        {
+          "description": "3-tab field shingles (15% waste)",
+          "qty": 48.14,
+          "unit": "sq",
+          "unit_cost": 75,
+          "subtotal": 3610.43
+        },
+        {
+          "description": "Starter strip",
+          "qty": 148,
+          "unit": "lf",
+          "unit_cost": 1.1,
+          "subtotal": 162.8
+        },
+        {
+          "description": "Hip & ridge cap shingles",
+          "qty": 200,
+          "unit": "lf",
+          "unit_cost": 4.5,
+          "subtotal": 900
+        },
+        {
+          "description": "Synthetic underlayment",
+          "qty": 4186,
+          "unit": "sqft",
+          "unit_cost": 0.2,
+          "subtotal": 837.2
+        },
+        {
+          "description": "Ice & water shield (eaves + valleys)",
+          "qty": 525,
+          "unit": "sqft",
+          "unit_cost": 0.6,
+          "subtotal": 315
+        },
+        {
+          "description": "Drip edge (aluminum, eaves + rakes)",
+          "qty": 148,
+          "unit": "lf",
+          "unit_cost": 1.1,
+          "subtotal": 162.8
+        },
+        {
+          "description": "Valley metal (W-valley)",
+          "qty": 27,
+          "unit": "lf",
+          "unit_cost": 3.5,
+          "subtotal": 94.5
+        },
+        {
+          "description": "Step flashing",
+          "qty": 22,
+          "unit": "pc",
+          "unit_cost": 1.2,
+          "subtotal": 26.4
+        },
+        {
+          "description": "Counter flashing",
+          "qty": 22,
+          "unit": "lf",
+          "unit_cost": 4.5,
+          "subtotal": 99
+        },
+        {
+          "description": "Pipe boots (rubber)",
+          "qty": 3,
+          "unit": "ea",
+          "unit_cost": 14,
+          "subtotal": 42
+        },
+        {
+          "description": "Roofing nails (1.25\" galv)",
+          "qty": 48.14,
+          "unit": "sq",
+          "unit_cost": 4.5,
+          "subtotal": 216.63
+        },
+        {
+          "description": "Continuous ridge vent",
+          "qty": 66,
+          "unit": "lf",
+          "unit_cost": 4.5,
+          "subtotal": 297
+        },
+        {
+          "description": "Sealants & consumables",
+          "qty": 1,
+          "unit": "job",
+          "unit_cost": 80,
+          "subtotal": 80
+        }
+      ],
+      "labor": [
+        {
+          "description": "Tear-off (single-layer)",
+          "qty": 4186,
+          "unit": "sqft",
+          "unit_cost": 0.65,
+          "subtotal": 2720.9
+        },
+        {
+          "description": "Install field shingles + underlayment + starter",
+          "qty": 4186,
+          "unit": "sqft",
+          "unit_cost": 1.5,
+          "subtotal": 6279
+        },
+        {
+          "description": "Ice & water shield install",
+          "qty": 525,
+          "unit": "sqft",
+          "unit_cost": 0.4,
+          "subtotal": 210
+        },
+        {
+          "description": "Hip / ridge cap install",
+          "qty": 200,
+          "unit": "lf",
+          "unit_cost": 3,
+          "subtotal": 600
+        },
+        {
+          "description": "Valley install (with metal)",
+          "qty": 27,
+          "unit": "lf",
+          "unit_cost": 5,
+          "subtotal": 135
+        },
+        {
+          "description": "Drip edge install",
+          "qty": 148,
+          "unit": "lf",
+          "unit_cost": 1,
+          "subtotal": 148
+        },
+        {
+          "description": "Step flashing install",
+          "qty": 22,
+          "unit": "pc",
+          "unit_cost": 4.5,
+          "subtotal": 99
+        },
+        {
+          "description": "Counter flashing install",
+          "qty": 22,
+          "unit": "lf",
+          "unit_cost": 5.5,
+          "subtotal": 121
+        },
+        {
+          "description": "Vent boot install",
+          "qty": 3,
+          "unit": "ea",
+          "unit_cost": 35,
+          "subtotal": 105
+        },
+        {
+          "description": "Ridge vent install",
+          "qty": 66,
+          "unit": "lf",
+          "unit_cost": 3,
+          "subtotal": 198
+        },
+        {
+          "description": "Site cleanup + magnetic sweep",
+          "qty": 1,
+          "unit": "job",
+          "unit_cost": 200,
+          "subtotal": 200
+        }
+      ],
+      "materials_subtotal": 6843.76,
+      "labor_subtotal": 12113.81,
+      "materials_regional": 6938.82,
+      "labor_regional": 11970.76,
+      "cost_basis": 18909.58,
+      "target_gross_margin": 0.32,
+      "quote_subtotal": 27808.2,
+      "dumpster": 780,
+      "permit": 400,
+      "total": 28988,
+      "per_sqft": 6.92
+    },
+    {
+      "key": "better",
+      "name": "Better — Architectural",
+      "shingle_product": "GAF Timberline HDZ",
+      "badge": "Industry standard",
+      "warranty": "Lifetime ltd",
+      "wind_rating_mph": 130,
+      "materials": [
+        {
+          "description": "Architectural field shingles (15% waste)",
+          "qty": 48.14,
+          "unit": "sq",
+          "unit_cost": 110,
+          "subtotal": 5295.29
+        },
+        {
+          "description": "Starter strip",
+          "qty": 148,
+          "unit": "lf",
+          "unit_cost": 1.1,
+          "subtotal": 162.8
+        },
+        {
+          "description": "Hip & ridge cap shingles",
+          "qty": 200,
+          "unit": "lf",
+          "unit_cost": 4.5,
+          "subtotal": 900
+        },
+        {
+          "description": "Synthetic underlayment",
+          "qty": 4186,
+          "unit": "sqft",
+          "unit_cost": 0.2,
+          "subtotal": 837.2
+        },
+        {
+          "description": "Ice & water shield (eaves + valleys)",
+          "qty": 525,
+          "unit": "sqft",
+          "unit_cost": 0.6,
+          "subtotal": 315
+        },
+        {
+          "description": "Drip edge (aluminum, eaves + rakes)",
+          "qty": 148,
+          "unit": "lf",
+          "unit_cost": 1.1,
+          "subtotal": 162.8
+        },
+        {
+          "description": "Valley metal (W-valley)",
+          "qty": 27,
+          "unit": "lf",
+          "unit_cost": 3.5,
+          "subtotal": 94.5
+        },
+        {
+          "description": "Step flashing",
+          "qty": 22,
+          "unit": "pc",
+          "unit_cost": 1.2,
+          "subtotal": 26.4
+        },
+        {
+          "description": "Counter flashing",
+          "qty": 22,
+          "unit": "lf",
+          "unit_cost": 4.5,
+          "subtotal": 99
+        },
+        {
+          "description": "Pipe boots (rubber)",
+          "qty": 3,
+          "unit": "ea",
+          "unit_cost": 14,
+          "subtotal": 42
+        },
+        {
+          "description": "Roofing nails (1.25\" galv)",
+          "qty": 48.14,
+          "unit": "sq",
+          "unit_cost": 4.5,
+          "subtotal": 216.63
+        },
+        {
+          "description": "Continuous ridge vent",
+          "qty": 66,
+          "unit": "lf",
+          "unit_cost": 4.5,
+          "subtotal": 297
+        },
+        {
+          "description": "Sealants & consumables",
+          "qty": 1,
+          "unit": "job",
+          "unit_cost": 80,
+          "subtotal": 80
+        }
+      ],
+      "labor": [
+        {
+          "description": "Tear-off (single-layer)",
+          "qty": 4186,
+          "unit": "sqft",
+          "unit_cost": 0.65,
+          "subtotal": 2720.9
+        },
+        {
+          "description": "Install field shingles + underlayment + starter",
+          "qty": 4186,
+          "unit": "sqft",
+          "unit_cost": 1.5,
+          "subtotal": 6279
+        },
+        {
+          "description": "Ice & water shield install",
+          "qty": 525,
+          "unit": "sqft",
+          "unit_cost": 0.4,
+          "subtotal": 210
+        },
+        {
+          "description": "Hip / ridge cap install",
+          "qty": 200,
+          "unit": "lf",
+          "unit_cost": 3,
+          "subtotal": 600
+        },
+        {
+          "description": "Valley install (with metal)",
+          "qty": 27,
+          "unit": "lf",
+          "unit_cost": 5,
+          "subtotal": 135
+        },
+        {
+          "description": "Drip edge install",
+          "qty": 148,
+          "unit": "lf",
+          "unit_cost": 1,
+          "subtotal": 148
+        },
+        {
+          "description": "Step flashing install",
+          "qty": 22,
+          "unit": "pc",
+          "unit_cost": 4.5,
+          "subtotal": 99
+        },
+        {
+          "description": "Counter flashing install",
+          "qty": 22,
+          "unit": "lf",
+          "unit_cost": 5.5,
+          "subtotal": 121
+        },
+        {
+          "description": "Vent boot install",
+          "qty": 3,
+          "unit": "ea",
+          "unit_cost": 35,
+          "subtotal": 105
+        },
+        {
+          "description": "Ridge vent install",
+          "qty": 66,
+          "unit": "lf",
+          "unit_cost": 3,
+          "subtotal": 198
+        },
+        {
+          "description": "Site cleanup + magnetic sweep",
+          "qty": 1,
+          "unit": "job",
+          "unit_cost": 200,
+          "subtotal": 200
+        }
+      ],
+      "materials_subtotal": 8528.62,
+      "labor_subtotal": 12113.81,
+      "materials_regional": 8647.09,
+      "labor_regional": 11970.76,
+      "cost_basis": 20617.84,
+      "target_gross_margin": 0.32,
+      "quote_subtotal": 30320.36,
+      "dumpster": 780,
+      "permit": 400,
+      "total": 31500,
+      "per_sqft": 7.53
+    },
+    {
+      "key": "best",
+      "name": "Best — Class 4 Impact",
+      "shingle_product": "GAF ArmorShield II",
+      "badge": "Insurance ✓",
+      "warranty": "Lifetime ltd",
+      "wind_rating_mph": 130,
+      "materials": [
+        {
+          "description": "Class 4 Impact field shingles (15% waste)",
+          "qty": 48.14,
+          "unit": "sq",
+          "unit_cost": 175,
+          "subtotal": 8424.32
+        },
+        {
+          "description": "Starter strip",
+          "qty": 148,
+          "unit": "lf",
+          "unit_cost": 1.1,
+          "subtotal": 162.8
+        },
+        {
+          "description": "Hip & ridge cap shingles",
+          "qty": 200,
+          "unit": "lf",
+          "unit_cost": 4.5,
+          "subtotal": 900
+        },
+        {
+          "description": "Synthetic underlayment",
+          "qty": 4186,
+          "unit": "sqft",
+          "unit_cost": 0.2,
+          "subtotal": 837.2
+        },
+        {
+          "description": "Ice & water shield (eaves + valleys)",
+          "qty": 525,
+          "unit": "sqft",
+          "unit_cost": 0.6,
+          "subtotal": 315
+        },
+        {
+          "description": "Drip edge (aluminum, eaves + rakes)",
+          "qty": 148,
+          "unit": "lf",
+          "unit_cost": 1.1,
+          "subtotal": 162.8
+        },
+        {
+          "description": "Valley metal (W-valley)",
+          "qty": 27,
+          "unit": "lf",
+          "unit_cost": 3.5,
+          "subtotal": 94.5
+        },
+        {
+          "description": "Step flashing",
+          "qty": 22,
+          "unit": "pc",
+          "unit_cost": 1.2,
+          "subtotal": 26.4
+        },
+        {
+          "description": "Counter flashing",
+          "qty": 22,
+          "unit": "lf",
+          "unit_cost": 4.5,
+          "subtotal": 99
+        },
+        {
+          "description": "Pipe boots (rubber)",
+          "qty": 3,
+          "unit": "ea",
+          "unit_cost": 14,
+          "subtotal": 42
+        },
+        {
+          "description": "Roofing nails (1.25\" galv)",
+          "qty": 48.14,
+          "unit": "sq",
+          "unit_cost": 4.5,
+          "subtotal": 216.63
+        },
+        {
+          "description": "Continuous ridge vent",
+          "qty": 66,
+          "unit": "lf",
+          "unit_cost": 4.5,
+          "subtotal": 297
+        },
+        {
+          "description": "Sealants & consumables",
+          "qty": 1,
+          "unit": "job",
+          "unit_cost": 80,
+          "subtotal": 80
+        }
+      ],
+      "labor": [
+        {
+          "description": "Tear-off (single-layer)",
+          "qty": 4186,
+          "unit": "sqft",
+          "unit_cost": 0.65,
+          "subtotal": 2720.9
+        },
+        {
+          "description": "Install field shingles + underlayment + starter",
+          "qty": 4186,
+          "unit": "sqft",
+          "unit_cost": 1.5,
+          "subtotal": 6279
+        },
+        {
+          "description": "Ice & water shield install",
+          "qty": 525,
+          "unit": "sqft",
+          "unit_cost": 0.4,
+          "subtotal": 210
+        },
+        {
+          "description": "Hip / ridge cap install",
+          "qty": 200,
+          "unit": "lf",
+          "unit_cost": 3,
+          "subtotal": 600
+        },
+        {
+          "description": "Valley install (with metal)",
+          "qty": 27,
+          "unit": "lf",
+          "unit_cost": 5,
+          "subtotal": 135
+        },
+        {
+          "description": "Drip edge install",
+          "qty": 148,
+          "unit": "lf",
+          "unit_cost": 1,
+          "subtotal": 148
+        },
+        {
+          "description": "Step flashing install",
+          "qty": 22,
+          "unit": "pc",
+          "unit_cost": 4.5,
+          "subtotal": 99
+        },
+        {
+          "description": "Counter flashing install",
+          "qty": 22,
+          "unit": "lf",
+          "unit_cost": 5.5,
+          "subtotal": 121
+        },
+        {
+          "description": "Vent boot install",
+          "qty": 3,
+          "unit": "ea",
+          "unit_cost": 35,
+          "subtotal": 105
+        },
+        {
+          "description": "Ridge vent install",
+          "qty": 66,
+          "unit": "lf",
+          "unit_cost": 3,
+          "subtotal": 198
+        },
+        {
+          "description": "Site cleanup + magnetic sweep",
+          "qty": 1,
+          "unit": "job",
+          "unit_cost": 200,
+          "subtotal": 200
+        }
+      ],
+      "materials_subtotal": 11657.65,
+      "labor_subtotal": 12113.81,
+      "materials_regional": 11819.58,
+      "labor_regional": 11970.76,
+      "cost_basis": 23790.34,
+      "target_gross_margin": 0.32,
+      "quote_subtotal": 34985.79,
+      "dumpster": 780,
+      "permit": 400,
+      "total": 36166,
+      "per_sqft": 8.64,
+      "incentives": [
+        {
+          "id": "tx_class4_wind_hail",
+          "label": "Class 4 wind/hail discount (TX)",
+          "headline": "Class 4 typically saves $400–$700/yr on TX homeowner's insurance",
+          "description_for_contractor": "Texas mandates that insurers file a Class 4 (UL 2218) discount. Most carriers — State Farm, Allstate, Farmers, USAA — land at 20–25% off the wind/hail portion of premium, with the full filed range 15–30%. Use the savings math to make the upgrade pay back in ~5 years.",
+          "description_for_customer": "Texas mandates that home insurance carriers file a discount for UL 2218 Class 4 impact-resistant shingles. Most carriers in TX (including State Farm, Allstate, Farmers, USAA) discount the wind/hail portion of your premium between 15% and 30% — most landing at 20–25%.",
+          "savings_math_template": "On a typical $3,500/yr premium where roughly 60% is wind/hail coverage, a 25% discount saves about $525/yr. That recovers the upgrade-from-architectural cost in ~5 years and continues to save you money every year after.",
+          "action_step": "Call your insurance agent before we schedule the job. Ask for the exact discount percentage and whether they need a shingle-wrapper photo or just the manufacturer's Class 4 certification for the file."
+        }
+      ]
+    }
+  ],
+  "recommended_tier_key": "best",
+  "generated_at": "2026-05-09T07:55:24.018Z",
+  "quote_id": "Q-20260509-GA73L"
+}
